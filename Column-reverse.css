@@ -1,0 +1,39 @@
+@media all and (max-width: 980px) {
+    /* wrap row in a flex box */
+    .custom_row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        / Safari 6.1+.0 /
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    /* custom classes that will designate the order of columns in the flex box row */
+    .first-on-mobile {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    .second-on-mobile {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+    .third-on-mobile {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+    }
+    .fourth-on-mobile {
+        -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+        order: 4;
+    }
+    /* add margin to last column */
+    .custom_row .et_pb_column:last-child {
+        margin-bottom: 30px !important;
+    }
+    .custom_row .et_pb_column:first-child {
+        margin-bottom: 0px;
+    }
+}
